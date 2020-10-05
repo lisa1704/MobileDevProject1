@@ -5,7 +5,7 @@ import { Text, StyleSheet, View, Button, Image, TouchableOpacity } from "react-n
 const HomeScreen = (props) => {
     console.log(props)
     return (
-        <View style={ styles.pageStyle}>
+        <View>
             <View style={{ marginVertical: 30, alignItems: "center" }}>
                 <Image source={require('../../assets/logo.png')} style={styles.logoStyle}/>
             </View>
@@ -13,46 +13,18 @@ const HomeScreen = (props) => {
                 <Text style={styles.textStyle}>Department of CSE</Text>
                 <Text style={styles.textStyle}>Program: SWE</Text>
             </View>
-            <View style={{ marginVertical: 20, alignItems: "center" }}>
-                <TouchableOpacity style={styles.buttonstyle}>
-                    <Button
-                        color="green"
-                        title="MY PROFILE"
-                        onPress={
-                            function () {
-                                props.navigation.navigate("Profile");
-                            }
+            <View style={ styles.opacityviewStyle}>
+                <TouchableOpacity
+                    style={{ alignSelf: "center"}}
+                    onPress={
+                        function () {
+                            props.navigation.navigate("Profile");
                         }
-                    />
+                    }
+                >
+                    <Text style={styles.opacityTextStyle}>My Profile</Text>
                 </TouchableOpacity>
             </View>
-            <View style={{ marginVertical: 20, alignItems: "center" }}>
-                <TouchableOpacity style={styles.buttonstyle}>
-                    <Button
-                        color="green"
-                        title="SEMESTER WISE COURSE LIST"
-                        onPress={
-                            function () {
-                                props.navigation.navigate("Profile");
-                            }
-                        }
-                    />
-                </TouchableOpacity>
-            </View>
-            <View style={{ marginVertical: 20, alignItems: "center" }}>
-                <TouchableOpacity style={styles.buttonstyle}>
-                    <Button
-                        color="green"
-                        title="LIST OF FACULTY MEMBERS"
-                        onPress={
-                            function () {
-                                props.navigation.navigate("Faculty");
-                            }
-                        }
-                    />
-                </TouchableOpacity>
-            </View>
-
         </View>
         
         );
@@ -61,9 +33,6 @@ const HomeScreen = (props) => {
 
 
 const styles = StyleSheet.create({
-    pageStyle: {
-        backgroundColor:"#C8E6C9"
-    },
     textStyle: {
         fontSize: 30,
         color: "black",
@@ -79,10 +48,10 @@ const styles = StyleSheet.create({
         color: "white",
         fontWeight: "bold"
     },
-    buttonstyle: {
-        alignSelf: "center",
-        width: "30%", 
-    },
-
+    opacityviewStyle: {
+        backgroundColor: "green",
+        width: "50%",
+        alignSelf: "center"
+    }
 });
 export default HomeScreen;
