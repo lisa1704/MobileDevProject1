@@ -5,7 +5,7 @@ import { Text, StyleSheet, View, Button, Image, TouchableOpacity } from "react-n
 const HomeScreen = (props) => {
     console.log(props)
     return (
-        <View>
+        <View style={ styles.pageStyle}>
             <View style={{ marginVertical: 30, alignItems: "center" }}>
                 <Image source={require('../../assets/logo.png')} style={styles.logoStyle}/>
             </View>
@@ -46,7 +46,7 @@ const HomeScreen = (props) => {
                         title="LIST OF FACULTY MEMBERS"
                         onPress={
                             function () {
-                                props.navigation.navigate("Profile");
+                                props.navigation.navigate("Faculty");
                             }
                         }
                     />
@@ -61,6 +61,9 @@ const HomeScreen = (props) => {
 
 
 const styles = StyleSheet.create({
+    pageStyle: {
+        backgroundColor:"#C8E6C9"
+    },
     textStyle: {
         fontSize: 30,
         color: "black",

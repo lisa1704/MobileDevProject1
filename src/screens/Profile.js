@@ -4,7 +4,7 @@ import { Text, StyleSheet, View, Button, Image, TouchableOpacity } from "react-n
 const Profile = (props) => {
     console.log(props);
     return (
-        <View>
+        <View style={pstyle.pageStyle }>
             <View style={{ marginVertical: 20, alignItems: "center" }}>
                 <Image source={require('../../assets/me.jpg')} style={pstyle.photoStyle} />
             </View>
@@ -18,6 +18,9 @@ const Profile = (props) => {
     );
 };
 const pstyle = StyleSheet.create({
+    pageStyle: {
+        backgroundColor:"#C8E6C9"
+    },
     photoStyle: {
         height: 300,
         width: 200,
@@ -34,7 +37,7 @@ const pstyle = StyleSheet.create({
         fontSize: 18,
         color: "white",
         fontWeight: "bold"
-    }
+    },
 
 }
 );
