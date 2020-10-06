@@ -19,7 +19,7 @@ const Profile = (props) => {
 };
 const pstyle = StyleSheet.create({
     pageStyle: {
-        backgroundColor:"#C8E6C9"
+ 
     },
     photoStyle: {
         height: 300,
@@ -29,9 +29,10 @@ const pstyle = StyleSheet.create({
     },
     textViewStyle: {
         alignSelf: "center",
-        alignItems: "center",
         backgroundColor: "green",
-        width:"50%"
+        width: "80%",
+        justifyContent: "center",
+        padding:10
     },
     textStyle: {
         fontSize: 18,

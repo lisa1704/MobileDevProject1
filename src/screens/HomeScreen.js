@@ -25,16 +25,39 @@ const HomeScreen = (props) => {
                     <Text style={styles.opacityTextStyle}>My Profile</Text>
                 </TouchableOpacity>
             </View>
+            <View style={styles.opacityviewStyle} >
+                <TouchableOpacity
+                    style={{ alignSelf: "center" }}
+                    onPress={
+                        function () {
+                            props.navigation.navigate("Semesters");
+                        }
+                    }
+                >
+                    <Text style={styles.opacityTextStyle}>Course Wise Semester List</Text>
+                </TouchableOpacity>
+            </View>
+            
+            <View style={styles.opacityviewStyle} >
+                <TouchableOpacity
+                    style={{ alignSelf: "center" }}
+                    onPress={
+                        function () {
+                            props.navigation.navigate("Faculty");
+                        }
+                    }
+                >
+                    <Text style={styles.opacityTextStyle}>List of Faculty Members</Text>
+                </TouchableOpacity>
+            </View>
         </View>
-        
         );
-
 };
 
 
 const styles = StyleSheet.create({
     textStyle: {
-        fontSize: 30,
+        fontSize: 22,
         color: "black",
         fontWeight: "bold"
     },
@@ -50,8 +73,11 @@ const styles = StyleSheet.create({
     },
     opacityviewStyle: {
         backgroundColor: "green",
-        width: "50%",
-        alignSelf: "center"
-    }
+        width: "80%",
+        alignSelf: "center",
+        padding: 10,
+        marginTop: 10,
+        justifyContent: "space-evenly"
+    },
 });
 export default HomeScreen;

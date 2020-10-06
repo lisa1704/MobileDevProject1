@@ -29,18 +29,22 @@ const Faculty = () => {
 };
 const styles = StyleSheet.create({
     textStyle: {
-        fontSize: 18,
+        fontSize: 20,
         color: "white",
         fontWeight:"bold"
     },
     viewStyle: {
-        backgroundColor:"#C8E6C9"
+        justifyContent: "center",
+        marginTop:250
     },
     listviewStyle: {
-        width: "50%",
+        width: "70%",
         alignSelf: "center",
+        alignContent:"center",
         alignItems: "center",
-        backgroundColor:"green"
+        backgroundColor: "green",
+        justifyContent: "center",
+
     }
 
 }
