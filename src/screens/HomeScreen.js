@@ -6,7 +6,7 @@ const HomeScreen = (props) => {
     console.log(props)
     return (
         <View>
-            <View style={{ marginVertical: 30, alignItems: "center" }}>
+            <View style={{ marginVertical: 30, alignItems: "center", marginTop:60 }}>
                 <Image source={require('../../assets/logo.png')} style={styles.logoStyle}/>
             </View>
             <View style={{ marginVertical: 20, alignItems: "center" }}>
@@ -75,8 +75,8 @@ const styles = StyleSheet.create({
         backgroundColor: "green",
         width: "80%",
         alignSelf: "center",
-        padding: 10,
-        marginTop: 10,
+        padding: 20,
+        marginTop: 20,
         justifyContent: "space-evenly"
     },
 });

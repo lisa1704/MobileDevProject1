@@ -4,8 +4,8 @@ import { Text, StyleSheet, View, Button, Image, TouchableOpacity } from "react-n
 const Profile = (props) => {
     console.log(props);
     return (
-        <View style={pstyle.pageStyle }>
-            <View style={{ marginVertical: 20, alignItems: "center" }}>
+        <View style={pstyle.pageStyle}>
+            <View style={pstyle.viewStyle}>
                 <Image source={require('../../assets/me.jpg')} style={pstyle.photoStyle} />
             </View>
             <View style={pstyle.textViewStyle}>
@@ -21,23 +21,36 @@ const pstyle = StyleSheet.create({
     pageStyle: {
  
     },
+    viewStyle: {
+        marginVertical: 20,
+        alignItems: "center",
+    },
     photoStyle: {
-        height: 300,
-        width: 200,
+        marginTop:80,
+        height: 400,
+        width: 300,
         resizeMode: "contain",
         borderColor: "brown",
     },
     textViewStyle: {
         alignSelf: "center",
+        alignItems: "flex-start",
         backgroundColor: "green",
-        width: "80%",
-        justifyContent: "center",
-        padding:10
+        width: "90%",
+        justifyContent: "space-evenly",
+        padding: 10,
+        margin:2,
+        marginTop: 2,
+        marginHorizontal: 2,
+        marginVertical: 2,
+        paddingBottom: 1
     },
     textStyle: {
         fontSize: 18,
         color: "white",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        paddingBottom: 1,
+        borderBottomWidth:15
     },
 
 }
