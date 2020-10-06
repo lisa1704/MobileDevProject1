@@ -7,6 +7,9 @@ import Profile from "./src/screens/Profile";
 import Faculty from "./src/screens/Faculty";
 import Semesters from "./src/screens/Semesters";
 import SixthSem from "./src/screens/SixthSem";
+import SeventhSem from "./src/screens/SeventhSem";
+import EighthSem from "./src/screens/EighthSem";
+
 
 
 const stack = createStackNavigator();
@@ -20,6 +23,8 @@ function App() {
                     <stack.Screen name="Faculty" component={Faculty} />
                     <stack.Screen name="Semesters" component={Semesters} />
                     <stack.Screen name="SixthSem" component={SixthSem} />
+                    <stack.Screen name="SeventhSem" component={SeventhSem} />
+                    <stack.Screen name="EighthSem" component={EighthSem} />
                 </stack.Navigator>
             </NavigationContainer>
         );

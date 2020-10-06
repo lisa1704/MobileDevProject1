@@ -15,9 +15,7 @@ function Semesters(props) {
                     <Text style={styles.textStyle}>6th Semester
                     </Text>
                 </TouchableOpacity>
-                <View>
 
-                </View>
             </View>
             <View style={styles.buttonStyle}>
                 <TouchableOpacity
@@ -30,14 +28,11 @@ function Semesters(props) {
                     </Text>
                 </TouchableOpacity>
             </View>
-            <View>
-
-            </View>
             <View style={styles.buttonStyle}>
                 <TouchableOpacity
                     style={styles.opacityStyle}
                     onPress={function () {
-                        props.navigation.navigate("EightSem");
+                        props.navigation.navigate("EighthSem");
                     }}
                 >
                     <Text style={styles.textStyle}>8th Semester

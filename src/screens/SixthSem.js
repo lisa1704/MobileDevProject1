@@ -1,15 +1,15 @@
 import React from "react";
 import { Text, StyleSheet, View, FlatList } from "react-native";
 
-const SixthSem = (props) =>
+const SixthSem = () =>
 {
-    console.log(props)
-    const sixthcourse = [{ name: "Math 4643: Probability and Statistics II" },
-        { name:"SWE 4637: Web and Mobile Application Development"},
-        { name: "CSE 4617: Artificial Intelligence" },
-        { name: "CSE 4621: Microprocessor and Interfacing" },
-        { name: "SWE 4601: Software Design and Architectures" },
-        { name:"SWE 4603: Software Testing and Quality Assurance"}
+
+    const sixthcourse = [{ name: "Math 4643: Probability and Statistics II",key:1 },
+        { name: "SWE 4637: Web and Mobile Application Development", key: 2},
+        { name: "CSE 4617: Artificial Intelligence", key: 3},
+        { name: "CSE 4621: Microprocessor and Interfacing", key: 4 },
+        { name: "SWE 4601: Software Design and Architectures", key: 5},
+        { name: "SWE 4603: Software Testing and Quality Assurance", key: 6}
     ];
     return (
         <View style={ styles.viewStyle}>
@@ -19,7 +19,7 @@ const SixthSem = (props) =>
                     function ({ item }) {
                         return (
                             <View style={ styles.listviewStyle}>
-                                <Text style={styles.textStyle}>{item.name}</Text>
+                                <Text style={styles.textStyle}>{ item.key}. {item.name}</Text>
                             </View>
                         );
                     }
@@ -31,7 +31,7 @@ const SixthSem = (props) =>
 
 const styles = StyleSheet.create({
     viewStyle: {
-        marginTop:180
+        marginTop:120
     },
     textStyle: {
         fontSize: 20,
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         marginTop: 5,
         marginHorizontal: 5,
         marginVertical: 5,
-        padding:10
+        padding:20
     }
 }
 );
