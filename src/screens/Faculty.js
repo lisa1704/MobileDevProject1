@@ -2,11 +2,12 @@ import React from "react";
 import { Text, StyleSheet, View, FlatList } from "react-native";
 
 const Faculty = () => {
-    const facult = [{ name: "Mr.A", key: 1 },
-        { name: "Mr.B", key: 2 },
-        { name: "Mr.C", key: 3 },
-        { name: "Mr.D", key: 4 },
-        { name: "Mr.E", key: 5 }
+    const facult = [{ name: "Dr Muhammad Mahbub Alam", key: 1 },
+        { name: "Dr. Abu Raihan Mostofa Kamal", key: 2 },
+        { name: "Dr. Md. Hasanul Kabir", key: 3 },
+        { name: "Mr. Mohayeminul Islam ", key: 4 },
+        { name: "Ms. Tajkia toma", key: 5 },
+        { name: "Mr. Tasnim Ahmed", key: 6 }
 
     ];
     return (
@@ -35,15 +36,19 @@ const styles = StyleSheet.create({
     },
     viewStyle: {
         justifyContent: "center",
-        marginTop:250
+        marginTop: 150,
     },
     listviewStyle: {
-        width: "70%",
+        width: "100%",
         alignSelf: "center",
         alignContent:"center",
         alignItems: "center",
         backgroundColor: "green",
         justifyContent: "center",
+        marginTop: 5,
+        marginHorizontal: 5,
+        marginVertical: 5,
+        padding: 20
 
     }
 
