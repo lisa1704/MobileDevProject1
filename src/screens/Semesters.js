@@ -7,11 +7,42 @@ function Semesters(props) {
         <View style={ styles.pageviewStyle}>
             <View style={styles.buttonStyle}>
                 <TouchableOpacity
-                    style={styles.opacityTextStyle}
+                    style={styles.opacityStyle}
                     onPress={function () {
-                        props.navigation.navigate("SixthSem");
+                        
                     }}
-                    />
+                >
+                    <Text style={styles.textStyle}>6th Semester
+                    </Text>
+                </TouchableOpacity>
+                <View>
+
+                </View>
+            </View>
+            <View style={styles.buttonStyle}>
+                <TouchableOpacity
+                    style={styles.opacityStyle}
+                    onPress={function () {
+                        props.navigation.navigate("SeventhSem");
+                    }}
+                >
+                    <Text style={styles.textStyle}>7th Semester
+                    </Text>
+                </TouchableOpacity>
+            </View>
+            <View>
+
+            </View>
+            <View style={styles.buttonStyle}>
+                <TouchableOpacity
+                    style={styles.opacityStyle}
+                    onPress={function () {
+                        
+                    }}
+                >
+                    <Text style={styles.textStyle}>8th Semester
+                    </Text>
+                </TouchableOpacity>
             </View>
         </View>
      );
@@ -20,16 +51,30 @@ function Semesters(props) {
 
 const styles = StyleSheet.create({
     pageviewStyle: {
-        alignItems: "center"
+        marginTop:250,
+        alignItems: "center",
+        alignSelf: "center"
     },
     buttonStyle: {
-        backgroundColor:"green"
+        backgroundColor: "green",
+        justifyContent: "space-evenly",
+        width: "80%",
+        padding: 10,
+        alignSelf: "center",
+        margin:5
     },
-    opacityTextStyle: {
+    opacityStyle: {
+        alignSelf: "center",
+        justifyContent: "space-evenly",
+        marginVertical: 10,
+        marginHorizontal: 10,
+        alignItems: "center",
+        width:300
+    },
+    textStyle: {
         fontSize: 20,
-        fontWeight: "bold",
-        color:"black"
-
+        color: "white",
+        fontWeight: "bold"
     }
 });
 export default Semesters;
