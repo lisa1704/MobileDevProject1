@@ -9,7 +9,7 @@ function Semesters(props) {
                 <TouchableOpacity
                     style={styles.opacityStyle}
                     onPress={function () {
-                        
+                        props.navigation.navigate("6th Semester");
                     }}
                 >
                     <Text style={styles.textStyle}>6th Semester
@@ -37,7 +37,7 @@ function Semesters(props) {
                 <TouchableOpacity
                     style={styles.opacityStyle}
                     onPress={function () {
-                        
+                        props.navigation.navigate("EightSem");
                     }}
                 >
                     <Text style={styles.textStyle}>8th Semester
