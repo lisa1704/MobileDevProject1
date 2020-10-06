@@ -18,13 +18,79 @@ function App() {
         return (
             <NavigationContainer>
                 <stack.Navigator initialRouteName="Home">
-                    <stack.Screen name="Home" component={HomeScreen} />
-                    <stack.Screen name="Profile" component={Profile} />
-                    <stack.Screen name="Faculty" component={Faculty} />
-                    <stack.Screen name="Semesters" component={Semesters} />
-                    <stack.Screen name="SixthSem" component={SixthSem} />
-                    <stack.Screen name="SeventhSem" component={SeventhSem} />
-                    <stack.Screen name="EighthSem" component={EighthSem} />
+                    <stack.Screen name="Home" component={HomeScreen} options={{
+                        title: 'Home',
+                        headerStyle: {
+                            backgroundColor: '#f4511e',
+                        },
+                        headerTintColor: '#fff',
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                    }}/>
+                    <stack.Screen name="Profile" component={Profile} options={{
+                        title: 'My Profile',
+                        headerStyle: {
+                            backgroundColor: '#f4511e',
+                        },
+                        headerTintColor: '#fff',
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                    }}/>
+                    <stack.Screen name="Faculty" component={Faculty} options={{
+                        title: 'List of Faculties',
+                        headerStyle: {
+                            backgroundColor: '#f4511e',
+                        },
+                        headerTintColor: '#fff',
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                    }}/>
+                    <stack.Screen name="Semesters" component={Semesters} options={{
+                        title: 'Semesters',
+                        headerStyle: {
+                            backgroundColor: '#f4511e',
+                        },
+                        headerTintColor: '#fff',
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                    }}/>
+                    <stack.Screen name="SixthSem" component={SixthSem}
+                        options={{
+                            title: 'Course List',
+                            headerStyle: {
+                                backgroundColor: '#f4511e',
+                            },
+                            headerTintColor: '#fff',
+                            headerTitleStyle: {
+                                fontWeight: 'bold',
+                            },
+                        }}/>
+                    <stack.Screen name="SeventhSem" component={SeventhSem}
+                        options={{
+                            title: 'Course List',
+                            headerStyle: {
+                                backgroundColor: '#f4511e',
+                            },
+                            headerTintColor: '#fff',
+                            headerTitleStyle: {
+                                fontWeight: 'bold',
+                            },
+                        }}/>
+                    <stack.Screen name="EighthSem" component={EighthSem}
+                        options={{
+                            title: 'Course List',
+                            headerStyle: {
+                                backgroundColor: '#f4511e',
+                            },
+                            headerTintColor: '#fff',
+                            headerTitleStyle: {
+                                fontWeight: 'bold',
+                            },
+                        }}/>
                 </stack.Navigator>
             </NavigationContainer>
         );
