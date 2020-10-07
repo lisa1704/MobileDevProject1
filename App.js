@@ -25,6 +25,7 @@ function App() {
                         },
                         headerTintColor: '#fff',
                         headerTitleStyle: {
+                            fontSize:20,
                             fontWeight: 'bold',
                         },
                     }}/>
@@ -35,6 +36,7 @@ function App() {
                         },
                         headerTintColor: '#fff',
                         headerTitleStyle: {
+                            fontSize: 20,
                             fontWeight: 'bold',
                         },
                     }}/>
@@ -45,6 +47,7 @@ function App() {
                         },
                         headerTintColor: '#fff',
                         headerTitleStyle: {
+                            fontSize: 20,
                             fontWeight: 'bold',
                         },
                     }}/>
@@ -55,6 +58,7 @@ function App() {
                         },
                         headerTintColor: '#fff',
                         headerTitleStyle: {
+                            fontSize: 20,
                             fontWeight: 'bold',
                         },
                     }}/>
@@ -77,6 +81,7 @@ function App() {
                             },
                             headerTintColor: '#fff',
                             headerTitleStyle: {
+                                fontSize: 20,
                                 fontWeight: 'bold',
                             },
                         }}/>
@@ -88,6 +93,7 @@ function App() {
                             },
                             headerTintColor: '#fff',
                             headerTitleStyle: {
+                                fontSize: 20,
                                 fontWeight: 'bold',
                             },
                         }}/>

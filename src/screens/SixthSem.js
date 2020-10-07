@@ -6,7 +6,7 @@ const SixthSem = () =>
 
     const sixthcourse = [{ name: "Math 4643: Probability and Statistics II",key:1 },
         { name: "SWE 4637: Web and Mobile Application Development", key: 2},
-        { name: "CSE 4617: Artificial Intelligence", key: 3},
+        { name: "CSE 4617: Artificial Intelligence", key:3},
         { name: "CSE 4621: Microprocessor and Interfacing", key: 4 },
         { name: "SWE 4601: Software Design and Architectures", key: 5},
         { name: "SWE 4603: Software Testing and Quality Assurance", key: 6}

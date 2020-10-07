@@ -11,7 +11,7 @@ const HomeScreen = (props) => {
             </View>
             <View style={{ marginVertical: 20, alignItems: "center" }}>
                 <Text style={styles.textStyle}>Department of CSE</Text>
-                <Text style={styles.textStyle}>Program: SWE</Text>
+                <Text style={styles.textStyle}>Programme: SWE</Text>
             </View>
             <View style={ styles.opacityviewStyle}>
                 <TouchableOpacity

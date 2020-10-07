@@ -6,7 +6,7 @@ const Faculty = () => {
         { name: "Dr. Abu Raihan Mostofa Kamal", key: 2 },
         { name: "Dr. Md. Hasanul Kabir", key: 3 },
         { name: "Mr. Mohayeminul Islam ", key: 4 },
-        { name: "Ms. Tajkia toma", key: 5 },
+        { name: "Ms. Tajkia Toma", key: 5 },
         { name: "Mr. Tasnim Ahmed", key: 6 }
 
     ];
